@@ -13,11 +13,11 @@ function App() {
 
   const allCatogories = ['Все', 'Горы', 'Море', 'Архитектура', 'Города']
 
+  const urlCategory = category !== 0 ? 'category=' + category : ''
+
   React.useEffect(() => {
     fetch(
-      `https://63d12d27120b32bbe8f2dbf8.mockapi.io/collection_for_mini_progects?${
-        category !== 0 ? 'category=' + category : ''
-      }&p=${page}&l=3`,
+      `https://63d12d27120b32bbe8f2dbf8.mockapi.io/collection_for_mini_progects?${urlCategory}&p=${page}&l=3`,
     )
       .then((res) => res.json())
       .then((json) => setCollections(json))
