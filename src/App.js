@@ -1,6 +1,6 @@
 import logo from './logo.svg'
 import './App.css'
-
+// https://63d12d27120b32bbe8f2dbf8.mockapi.io/collection_for_mini_progects
 function App() {
   return (
     <div className='App'>
